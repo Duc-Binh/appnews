@@ -1,0 +1,8 @@
+.wrapper-register label.error {
+  color: red;
+}
+
+.wrapper-register input.error {
+  border-color: red;
+}
+/*# sourceMappingURL=register.css.map */

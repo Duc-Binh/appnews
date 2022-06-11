@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,iBADa,CACb,KAAK,AAAA,MAAM,CAAC;EACR,KAAK,EAAE,GAAG;CACb;;AAHL,AAII,iBAJa,CAIb,KAAK,AAAA,MAAM,CAAC;EACR,YAAY,EAAE,GAAG;CACpB",
+    "sources": [
+        "register.scss"
+    ],
+    "names": [],
+    "file": "register.css"
+}
