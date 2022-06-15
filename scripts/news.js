@@ -1,11 +1,24 @@
-const url =
-    "https://newsapi.org/v2/everything?q=tesla&from=2022-05-12&sortBy=publishedAt&apiKey=1ab7f9e41e6c4f8e9b26cc41c91f3bd7";
-$.get({
-    url: url,
-}).done(function(data) {
-    console.log(data);
-    handleViewData(data);
+$("#pagination").twbsPagination({
+    totalPages: 5,
+    visiblePages: 5,
+    onPageClick: function(event, page) {
+        newsApi(page + 1);
+    },
 });
+
+
+
+function newsApi(page) {
+    const url = `https://newsapi.org/v2/everything?q=tesla&from=2022-05-15&sortBy=publishedAt&pagesize=5&page=${page}&apiKey=1ab7f9e41e6c4f8e9b26cc41c91f3bd7`;
+    $.get({
+        url: url,
+    }).done(function(data) {
+        console.log(data);
+        handleViewData(data);
+    });
+}
+
+
 
 function handleViewData(data) {
     const { articles } = data;
@@ -31,5 +44,5 @@ function handleViewData(data) {
     `);
     })
 
-    console.log(articles);
+    // console.log(articles);
 }

@@ -39,23 +39,35 @@
         <div id="content" class="p-4 p-md-5 pt-5">
             <h2 class="mb-4">News</h2>
             <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
+                <ul id="pagination" class="pagination justify-content-center">
+                    <!-- <li class="page-item">
                         <button class="page-link" href="#" id="btn-prev">Previous</button>
+                    </li> -->
+                    <!-- <li class="page-item disabled">
+                        <a class="page-link" id="page-num-1">1</a>
                     </li>
                     <li class="page-item disabled">
-                        <a class="page-link" id="page-num">1</a>
+                        <a class="page-link" id="page-num-2">2</a>
                     </li>
-                    <li class="page-item">
+                    <li class="page-item disabled">
+                        <a class="page-link" id="page-num-3">3</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" id="page-num-4">4</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" id="page-num-5">5</a>
+                    </li> -->
+                    <!-- <li class="page-item">
                         <button class="page-link" id="btn-next">Next</button>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
 
             <!-- News list -->
             <div id="news-container">
-                <div class="container-fluid" id="news-item">
-                    <div class="wapper">
+                <div class="container-fluid h-100" id="news-item">
+                    <!-- <div class="wapper">
                         <div class="row">
                             <div class="col-4">
                                 <div class="img">
@@ -70,6 +82,22 @@
                                 </div>
                             </div>
                         </div>
+                    </div> -->
+                    <div class="loading">
+                        <div class="loadingio-spinner-bean-eater-oi15tgndqtj">
+                            <div class="ldio-hrrl0evluy8">
+                                <div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -78,6 +106,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js"></script>
     <script src="../models/User.js"></script>
     <script src="../scripts//storage.js"></script>
     <script src="../scripts/news.js"></script>
