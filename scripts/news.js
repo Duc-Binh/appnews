@@ -9,7 +9,8 @@ $("#pagination").twbsPagination({
 
 
 function newsApi(page) {
-    const url = `https://newsapi.org/v2/everything?q=tesla&from=2022-05-15&sortBy=publishedAt&pagesize=5&page=${page}&apiKey=1ab7f9e41e6c4f8e9b26cc41c91f3bd7`;
+    const url = `https://newsapi.org/v2/everything?q=tesla&from=2022-05-19&sortBy=publishedAt&pagesize=5&page=${page}&apiKey=21b6139095fd4668aefcd62802b673e1
+    `;
     $.get({
         url: url,
     }).done(function(data) {

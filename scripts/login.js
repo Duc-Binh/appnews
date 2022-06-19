@@ -57,7 +57,7 @@ function handlerSubmitForm() {
     const findUser = listUsers.find(function(data) {
         return user.username === data.username && user.password === data.password;
     });
-    debugger
+    // debugger
     if (!findUser) {
         Alert("error", "username or password is illegal");
     } else {
